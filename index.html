@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dudu & Bubu World 💕</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+:root{--pink:#ff6f9d;--deep:#663f45;--cream:#fffaf5;--pink2:#ffe5ed;--brown:#8a5a48}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--deep);font-family:Nunito,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Baloo 2",cursive;margin:0}.nav{position:sticky;top:0;z-index:20;background:#fffaf9dd;backdrop-filter:blur(12px);border-bottom:2px solid #ffe3e9}
+.navin{max-width:1150px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}.logo{font:bold 27px "Baloo 2";color:var(--brown)}.logo span{color:var(--pink)}
+nav a{color:var(--deep);text-decoration:none;margin:0 9px;font-weight:800;font-size:14px}.pill{border:0;background:var(--pink);color:white;border-radius:30px;padding:12px 18px;font-weight:800;cursor:pointer;box-shadow:0 7px 18px #ff6f9d35}
+.hero{min-height:600px;background:linear-gradient(135deg,#ffe7ee,#fff4dc);position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:55px 20px}
+.cloud{position:absolute;background:#fff;border-radius:100px;filter:blur(.2px);opacity:.8}.c1{width:230px;height:70px;left:-40px;top:70px}.c2{width:280px;height:80px;right:-50px;bottom:90px}
+.hero .content{max-width:850px;position:relative;z-index:2}.eyebrow{font-weight:800;color:#e85884;font-size:18px}.hero h1{font-size:clamp(60px,10vw,110px);line-height:.82;color:#7b5145;text-shadow:3px 4px #fff}.hero h1 span{color:var(--pink)}.hero p{font-size:20px;max-width:650px;margin:25px auto;line-height:1.6}.bears{font-size:110px;margin:18px;animation:bob 2.2s ease-in-out infinite}.heroimg{width:min(520px,90vw);max-height:300px;object-fit:cover;border-radius:35px;margin:15px auto;display:block;border:5px solid #fff;box-shadow:0 15px 35px #8a5a4830}.heart{position:absolute;font-size:35px;animation:float 4s infinite ease-in-out}.h1{left:12%;top:25%}.h2{right:14%;top:18%;animation-delay:1s}.h3{left:20%;bottom:17%;animation-delay:2s}@keyframes bob{50%{transform:translateY(-12px) rotate(2deg)}}@keyframes float{50%{transform:translateY(-25px) rotate(10deg)}}
+section{max-width:1150px;margin:auto;padding:70px 20px}.sectiontitle{text-align:center;font-size:44px;margin-bottom:12px}.sub{text-align:center;color:#a2777e;margin:0 auto 35px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:2px solid #ffe0e8;border-radius:25px;padding:22px;text-align:center;box-shadow:0 12px 30px #9a526012;transition:.25s}.card:hover{transform:translateY(-7px) rotate(-1deg)}.gameicon{font-size:58px}.card h3{font-size:24px}.card p{font-size:14px;color:#8f7378;min-height:42px}.btn{display:inline-block;border:0;background:#fff0f4;color:#e84e7e;border-radius:25px;padding:10px 17px;font-weight:800;cursor:pointer}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}.panel{background:#fff;border:2px solid #ffe0e8;border-radius:30px;padding:28px;box-shadow:0 12px 30px #9a526012}
+#gamebox{min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.score{font-weight:900;color:var(--pink);font-size:20px}.tap{font-size:75px;border:0;background:#fff0f4;border-radius:50%;width:150px;height:150px;cursor:pointer;box-shadow:0 10px 0 #ffc6d7;transition:.08s}.tap:active{transform:translateY(8px);box-shadow:0 2px 0 #ffc6d7}
+.meter{height:18px;background:#ffe5ec;border-radius:20px;overflow:hidden;margin:15px 0}.bar{height:100%;width:0;background:var(--pink);transition:.2s}
+.memory{display:grid;grid-template-columns:repeat(4,70px);gap:10px;justify-content:center}.mem{height:70px;border:0;border-radius:15px;background:#ffdce7;font-size:30px;cursor:pointer}.mem.reveal{background:#fff5df}
+.quote{font-size:28px;line-height:1.35;text-align:center;font-family:"Baloo 2";padding:35px}.surprise{font-size:75px;text-align:center;cursor:pointer;transition:.2s}.surprise:hover{transform:scale(1.08)}
+.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.wall div{height:170px;border-radius:25px;overflow:hidden;background:#fff;border:2px solid #ffe0e8}.wall img{width:100%;height:100%;object-fit:cover}
+footer{background:#ffe7ee;padding:45px 20px;text-align:center}.footerbear{font-size:55px}.tiny{color:#a27880;font-size:13px}
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.wall{grid-template-columns:1fr 1fr}.hero{min-height:520px}.bears{font-size:85px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.wall{grid-template-columns:1fr}.hero h1{font-size:64px}.hero p{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="navin"><div class="logo">🐻 Dudu <span>&</span> Bubu 🐼</div><nav><a href="#home">Home</a><a href="#games">Games</a><a href="#cute">Cute Stuff</a><a href="#surprise">Surprise</a></nav><button class="pill" onclick="love()">💗 Love!</button></div></header>
+
+<main id="home">
+<section class="hero">
+<div class="cloud c1"></div><div class="cloud c2"></div>
+<div class="heart h1">💗</div><div class="heart h2">✨</div><div class="heart h3">💕</div>
+<div class="content"><div class="eyebrow">~ welcome to our tiny happy world ~</div><img class="heroimg" src="assets/dudu-bubu-hero.jpg" alt="Cute Dudu and Bubu together"><h1>DUDU <span>&</span><br>BUBU</h1><p>A ridiculously cute little corner of the internet filled with tiny games, silly surprises, hugs, hearts and maximum <b>meow-level cuteness</b>. 🥹💕</p><button class="pill" onclick="document.querySelector('#games').scrollIntoView()">🎮 Enter the Cute Zone</button></div>
+</section>
+
+<section id="games">
+<h2 class="sectiontitle">🎮 Play Cute Games</h2><p class="sub">No skill required. Only cuteness. 😭💗</p>
+<div class="grid">
+<div class="card"><div class="gameicon">🐻💨</div><h3>Dudu Tap Rush</h3><p>Tap Dudu as fast as you can before the timer ends!</p><button class="btn" onclick="startTap()">Play Now ▶</button></div>
+<div class="card"><div class="gameicon">🫧🐼</div><h3>Bubble Pop</h3><p>Pop the bubbles and fill Bubu's happiness meter.</p><button class="btn" onclick="bubble()">Pop Bubbles 🫧</button></div>
+<div class="card"><div class="gameicon">🃏💕</div><h3>Memory Match</h3><p>Find all the cute matching Dudu-Bubu pairs.</p><button class="btn" onclick="memory()">Play Match 🧠</button></div>
+<div class="card"><div class="gameicon">🎁🥹</div><h3>Mystery Gift</h3><p>Click the mystery box for a completely random surprise.</p><button class="btn" onclick="surprise()">Open 🎁</button></div>
+</div>
+</section>
+
+<section>
+<div class="two">
+<div class="panel"><h2>💗 Cute Game Station</h2><div id="gamebox"><p>Choose a game above and let's gooo!</p><div style="font-size:70px">🐻 🐼</div></div></div>
+<div class="panel"><h2>💌 Daily Dose of Love</h2><div class="quote" id="quote">"You're my favorite little notification." 💕</div><button class="btn" onclick="newQuote()">Another one ✨</button></div>
+</div>
+</section>
+
+<section id="cute">
+<h2 class="sectiontitle">🌸 Cute Stuff Corner</h2><p class="sub">Things that absolutely nobody asked for but everyone needs.</p>
+<div class="grid">
+<div class="card"><div class="gameicon">😂</div><h3>Dudu Meme</h3><p id="meme">When you say "one more episode" at 2 AM.</p><button class="btn" onclick="newMeme()">Next meme</button></div>
+<div class="card"><div class="gameicon">🫂</div><h3>Free Hug</h3><p>Feeling meh? Take a virtual Dudu-Bubu hug.</p><button class="btn" onclick="hug()">HUG ME 🫂</button></div>
+<div class="card"><div class="gameicon">🐾</div><h3>Pet Bubu</h3><p>Keep tapping Bubu until the happiness meter explodes.</p><button class="btn" onclick="pet()">Pet 🐼</button><div class="meter"><div class="bar" id="petbar"></div></div></div>
+<div class="card"><div class="gameicon">🔊</div><h3>Meow Button</h3><p>There is no reason for this button to exist.</p><button class="btn" onclick="meow()">MEOW 😼</button></div>
+</div>
+</section>
+
+<section id="surprise">
+<h2 class="sectiontitle">🎀 Surprise Room</h2><p class="sub">Proceed only if you are prepared for unreasonable cuteness.</p>
+<div class="panel" style="text-align:center"><div class="surprise" onclick="surprise()">🎁</div><h2 id="gifttext">Click the gift!</h2><p id="giftsub">Something tiny and adorable is hiding inside.</p></div>
+</section>
+
+<section>
+<h2 class="sectiontitle">🖼️ Cuteness Gallery</h2><p class="sub">A tiny wall of Dudu & Bubu vibes.</p>
+<div class="wall">
+      <div><img src="assets/dudu-bubu-love.jpg" alt="Dudu and Bubu"></div>
+      <div><img src="assets/dudu-bubu-couple.jpg" alt="Dudu and Bubu"></div>
+      <div><img src="assets/dudu-bubu-hug.jpg" alt="Dudu and Bubu hugging"></div>
+      <div><img src="assets/dudu-bubu-comics.jpg" alt="Dudu and Bubu comics"></div>
+      <div><img src="assets/dudu-bubu-gallery.jpg" alt="Dudu and Bubu gallery"></div>
+      <div><img src="assets/dudu-bubu-meow.jpg" alt="Bubu meow"></div>
+    </div>
+</section>
+</main>
+
+<footer><div class="footerbear">🐻‍❄️ 🫶 🐻</div><h2>Dudu & Bubu World</h2><p>Made with 100% tiny hearts, zero seriousness & lots of meow.</p><p class="tiny">© 2026 Dudu & Bubu World • Made for cute people 💗</p></footer>
+
+<script>
+let timer, taps=0, petScore=0;
+const quotes=["You're my favorite little notification. 💕","If cuteness were illegal, we'd both be in trouble. 🥹","Certified 100% hug-shaped friendship. 🫂","You make ordinary days feel like strawberry milk. 🍓","Dudu + Bubu = tiny chaos + giant happiness. 💗","Stay soft. Stay silly. Keep smiling. 🌸"];
+const memes=["When you say 'one more episode' at 2 AM.","Me pretending I didn't eat the last cookie. 🍪","Brain: sleep. Me: let's think about everything since 2017.","Bubu has entered potato mode. 🥔🐼","Dudu's professional skill: looking cute while doing nothing.","POV: someone said 'be normal' and we simply couldn't. 😂"];
+function box(html){document.getElementById('gamebox').innerHTML=html;document.getElementById('gamebox').scrollIntoView({behavior:'smooth',block:'center'})}
+function startTap(){taps=0;let sec=10;box(`<div class="score">Taps: <span id="sc">0</span> • Time: <span id="tm">10</span>s</div><button class="tap" id="tap">🐻</button><p>GO GO GO! 💨</p>`);document.getElementById('tap').onclick=()=>{taps++;document.getElementById('sc').textContent=taps};clearInterval(timer);timer=setInterval(()=>{sec--;document.getElementById('tm').textContent=sec;if(sec<=0){clearInterval(timer);box(`<div style="font-size:70px">🏆🐻</div><h2>You got ${taps} taps!</h2><p>${taps>35?'DUDU SPEED DEMON 😭🔥':'Cute effort! Try again! 💗'}</p><button class="btn" onclick="startTap()">Again</button>`)}},1000)}
+function bubble(){let n=0;box(`<h2>Pop 15 bubbles! 🫧</h2><div class="score" id="bsc">0 / 15</div><div id="bubbles" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:500px;margin:15px"></div>`);const wrap=document.getElementById('bubbles');for(let i=0;i<15;i++){let b=document.createElement('button');b.className='btn';b.style.fontSize='25px';b.textContent=['🫧','🩷','💛','💚','💙'][i%5];b.onclick=()=>{if(b.disabled)return;b.disabled=true;b.textContent='✨';n++;document.getElementById('bsc').textContent=n+' / 15';if(n===15)setTimeout(()=>box('<div style="font-size:70px">🎉🐼</div><h2>BUBU IS HAPPY!</h2><p>You popped all the bubbles!</p>'),300)};wrap.appendChild(b)}}
+function memory(){let vals=['🐻','🐼','🍓','🧋','🐻','🐼','🍓','🧋'].sort(()=>Math.random()-.5),first=null,lock=false,matches=0;box(`<h2>Find the pairs 💕</h2><div class="memory" id="mem"></div><p id="mstat">Pairs: 0 / 4</p>`);const grid=document.getElementById('mem');vals.forEach(v=>{let b=document.createElement('button');b.className='mem';b.textContent='❓';b.dataset.v=v;b.onclick=()=>{if(lock||b.classList.contains('reveal'))return;b.classList.add('reveal');b.textContent=v;if(!first){first=b;return}lock=true;if(first.dataset.v===b.dataset.v){matches++;first=null;lock=false;document.getElementById('mstat').textContent='Pairs: '+matches+' / 4';if(matches===4)setTimeout(()=>box('<div style="font-size:70px">🧠💗</div><h2>Perfect Match!</h2><p>Dudu & Bubu approve.</p>'),400)}else{setTimeout(()=>{first.classList.remove('reveal');first.textContent='❓';b.classList.remove('reveal');b.textContent='❓';first=null;lock=false},650)}};grid.appendChild(b)})}
+function newQuote(){document.getElementById('quote').textContent='"'+quotes[Math.floor(Math.random()*quotes.length)]+'"'}
+function newMeme(){document.getElementById('meme').textContent=memes[Math.floor(Math.random()*memes.length)]}
+function hug(){document.getElementById('gamebox').innerHTML='<div style="font-size:90px;animation:bob 1s infinite">🐻🫂🐼</div><h2>BIG VIRTUAL HUG! 🫂</h2><p>Everything is a little better now. 💗</p>'}
+function pet(){petScore=Math.min(100,petScore+10);document.getElementById('petbar').style.width=petScore+'%';if(petScore===100){alert('BUBU IS SO HAPPY! 🐼💗');petScore=0;document.getElementById('petbar').style.width='0%'}}
+function meow(){let sounds=['MEOW! 😼','mrrrp~ 🐱','MEOW MEOW!! 😭','mew. 💗','MEEEEOW! ✨'];alert(sounds[Math.floor(Math.random()*sounds.length)])}
+function surprise(){let gifts=['You deserve a giant hug today. 🫂','Bubu thinks you are adorable. 🐼💗','Dudu has officially approved your vibes. 🐻✨','Emergency supply of happiness deployed! 🌸','You unlocked: +1000 Cuteness Points! 🏆','Reminder: drink water and keep smiling. 💧💕'];document.getElementById('gifttext').textContent=gifts[Math.floor(Math.random()*gifts.length)];document.getElementById('giftsub').textContent='🎀 Surprise unlocked! Click again for another one.'}
+function love(){document.body.insertAdjacentHTML('beforeend','<div id="love" style="position:fixed;inset:0;z-index:99;display:grid;place-items:center;background:#ff6f9d55"><div style="background:white;padding:35px;border-radius:30px;text-align:center;box-shadow:0 20px 60px #0002"><div style="font-size:80px">🐻💗🐼</div><h2>Sending 9999 tiny hearts!</h2><button class="pill" onclick="document.getElementById(\'love\').remove()">Awww 🥹</button></div></div>')}
+</script>
+</body>
+</html>
